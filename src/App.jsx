@@ -3,53 +3,66 @@ import { useState } from 'react'
 
 import artists from './assets/artists.json'
 
-artists.forEach((artist) => {
-  console.log(artist.id)
-});
+// console.log(artists.length);
 
 export default function App() {
   return (
-    <div>
-      <h1>Counter</h1>
-      <MyButton />
-      <h1>Artist Image</h1>
-      <ArtistImage />
-    </div>
+      <section>
+        <ArtistCard />
+      </section>
   )
 }
 
-function MyButton() {
-  const [count, setCount] = useState(0)
 
+const ArtistImage = ({ imageURL }) => {
   return (
-
-    <div className="card">
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </div>
-
-  )
-}
-
-const ImageComponent = ({ imageURL }) => {
-  return (
-    <div>
       <img
       src={imageURL}
       alt="Image"
       style={{ width: '200px', height: '200px' }}
       />
-    </div>
   );
 };
 
-function ArtistImage() {
+const ArtistDescription = ({ description }) => {
+  return (
+    <p>{description}</p>
+  );
+};
+
+const LikeToggle = () => {
+  const [like, setLike] = useState(false);
+
+  const handleLikeToggle = () => {
+    setLike(prevState => !prevState);
+  };
+
+  const buttonStyle = {
+    backgroundColor: like ? 'red' : 'white',
+  };
+
+  return (
+    <button onClick={handleLikeToggle} style={buttonStyle}>
+      {like ? 'Unlike' : 'Like'}
+    </button>
+  );
+};
+
+
+function ArtistCard() {
   return (
     <section>
-      {artists.map(artist =>
-        <ImageComponent key={artist.id} imageURL={artist.imgURL} />
-      )}
+      {artists.map(artist => (
+        <div key={artist.id}>
+          <h1>{artist.name}</h1>
+          <ArtistImage imageURL={artist.imgURL} />
+          <h3>Genre: {artist.genre}</h3>
+          <ArtistDescription description={artist.description} />
+          <LikeToggle />
+        </div>
+      ))}
     </section>
   );
 }
+
+
