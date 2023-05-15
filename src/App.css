@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap');
+
 .artistCard{
   text-align: center;
+  margin: 5rem 0;
+  padding: 5rem;
+  background-color: rgb(220, 220, 220);
+}
+body{
+  font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2{
+  font-size: 4rem;
+  margin: 5px;
 }
 
 .artistPhoto{
   width: 300px;
   height: 300px;
+  border-radius: 100%;
 }
 
 
@@ -21,4 +39,32 @@
 .album-cover{
   width: 200px;
   height: 200px;
+  border-radius: 15px;
+}
+
+.likeButton{
+  width: 10rem;
+  height: 3rem;
+  background-color: rgb(244, 244, 244);
+  border-style: none;
+  border-radius: 5px;
+}
+
+.likeButton:hover{
+  box-shadow: 0 8px 10px -6px #866666;
+}
+
+.buttonText{
+  margin-left: 0.5em;
+  font-size: 2rem;
+  font-family: 'Jost', sans-serif;
+}
+
+.buttonIcon{
+  padding-bottom:0.2em ;
+}
+
+.artist-description{
+  padding: 0 15rem;
+  margin: 2rem 0;
 }
