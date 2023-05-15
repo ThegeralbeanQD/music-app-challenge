@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Queen",
+        "genre": "Rock",
+        "imgURL": "https://wiki.killuglyradio.com/images/thumb/4/4e/Queenband.jpg/300px-Queenband.jpg",
+        "description": "A British rock band formed in London in 1970 creating iconic songs such as 'Don't Stop Me Now', 'Bohemian Rhapsody', 'We Are The Champions' and many more.",
+        "topSoldAlbums": [
+            {
+                "albumName": "Greatest Hits I",
+                "albumCover": "https://upload.wikimedia.org/wikipedia/en/0/02/Queen_Greatest_Hits.png",
+                "releaseDate": "26 October 1981"
+            },
+            {
+                "albumName": "Made In Heaven",
+                "albumCover": "https://upload.wikimedia.org/wikipedia/en/0/03/Madeinheaven.jpg",
+                "releaseDate": "6 November 1995"
+            },
+            {
+                "albumName": "Greatest Hits II",
+                "albumCover": "https://upload.wikimedia.org/wikipedia/en/3/38/Queen_-_Greatest_Hits_2.png",
+                "releaseDate": "28 October 1991"
+            }
+        ],
+        "id": 1
+    },
+    {
+        "name": "Dua Lipa",
+        "genre":"Pop",
+        "imgURL": "https://media.gq.com/photos/5a5f79d835be9e1aebeceecf/4:3/w_4556,h_3417,c_limit/Dua_Lipa_01.jpg",
+        "description": "Dua Lipa is an English and Albanian singer and songwriter. Her debut album released in 2017 which was top 3 on the UK Albums Chart at the time.",
+        "topSoldAlbums": [
+            {
+                "albumName": "Dua Lipa",
+                "albumCover": "https://upload.wikimedia.org/wikipedia/en/2/20/Dua_Lipa_%28album%29.png",
+                "releaseDate": "2 June 2017"
+            },
+            {
+                "albumName": "Future Nostalgia",
+                "albumCover": "https://upload.wikimedia.org/wikipedia/en/f/f5/Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png",
+                "releaseDate": "27 March 2020"
+            }
+        ],
+        "id": 2
+    },
+    {
+        "name": "Aries",
+        "genre": "Rap/Pop",
+        "imgURL": "https://e0.pxfuel.com/wallpapers/712/339/desktop-wallpaper-queen-the-band-queen-rock-band-thumbnail.jpg",
+        "description": "Arshia Nicholas Fattah AKA Aries is an American singer/songwriter, who songs became known from his YouTube channel.",
+        "topSoldAlbums": [
+            {
+                "albumName": "WELCOME HOME",
+                "albumCover": "https://i.scdn.co/image/ab67616d0000b2735d084c9ce80631cbce8d84c2",
+                "releaseDate": "18 April 2019"
+            },
+            {
+                "albumName": "BELIEVE IN ME, WHO BELIEVES IN YOU",
+                "albumCover": "https://cdn2.albumoftheyear.org/750x/album/412021-believe-in-me.jpg",
+                "releaseDate": "12 November 2021"
+            },
+            {
+                "albumName": "Beware of Shapeshifters",
+                "albumCover": "https://cdn2.albumoftheyear.org/750x/album/532013-beware-of-shapeshifters.jpg",
+                "releaseDate": "31 May 2016"
+            }
+        ],
+        "id": 3
+    }
+]
